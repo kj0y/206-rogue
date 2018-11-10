@@ -1,165 +1,547 @@
-@font-face{
-	font-family: 'Wisdom Script';
-	src: url('../fonts/wisdom-script.otf') format('opentype');
-}
+	@font-face{
+		font-family: 'Wisdom Script';
+		src: url('../fonts/wisdom-script.otf') format('opentype');
+	}
 
-body {
-	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-}
+@media all and (max-width:767px) {
+		    /* Mobile styles */
+			html {
+				font-size: 16px;
+			}
 
-.container{
-	max-width: 1200px;
-	margin: 0 auto;
-}
+			body {
+				font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+				font-size: 1em;
+			}
 
-h1,
-h2,
-h3,
-h4 {
-	color: black;
-	text-transform: uppercase;
-	font-weight: 700;
-}
-h1 {
-	font-size: 30px;
-}
-h2 {
-    font-size: 24px;
-}
-h3 {
-	font-size: 18px;
-}
-h4 {
-	font-size: 12px;
-}
+			.container {
+				max-width: 768px;
+				margin: 0 3%;
+			}
 
-p {
-	font-size: 14px;
-	line-height: 21px;
-    padding: 0 30px;
-}
+			h1,
+			h2,
+			h3,
+			h4 {
+				color: black;
+				text-transform: uppercase;
+				font-weight: 700;
+			}
 
-/*The widths are in a percentage!*/
-header {
-	height: 110px;
-	border-bottom: 3px solid #77a466;
-	margin: 0 auto;
-}
+			h2 { /* not used? should be 24px */
+			    font-size: 1.5em;
+			}
 
-header h1 {
-	float: left;
-	margin: 0;
-	padding: 38px 0;
-}
-header h1 span {
-	color: #77a466;
-}
+			.top-section h3 {
+				font-size: 1.125em;
+			}
 
-header nav {
-	float: right;
-	padding: 46px 0;
-}
-header nav ul {
-	margin: 0;
-	padding: 0;
-}
-header nav ul li {
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: 14px;
-	padding: 0 10px;
-	display: inline;
-}
-header nav ul li a{
-	text-decoration: none;
-	color:#77a466;
-}
+			.bottom-section h4 {
+				font-size: .75em;
+			}
 
-/*The widths are in a percentage!*/
-.top-section,
-.bottom-section {
-	margin: 0 auto;
-	clear: both;
-}
+			footer h4 {
+				font-size: .75em;
+			}
 
-.main-image {
-	height: auto;
-	float: left;
-}
-.main-image img {
-	width: 100%;
-	border-bottom: 3px solid #77a466;
-}
+			p { /* mobile specific */
+				font-size: .875em;
+				line-height: 21px;
+			  padding: 0 30px;
+			}
 
-.main-title {
-	height: auto;
-	float: left;
-}
-.main-title h3 {
-	text-align: left;
-	padding: 5px 0;
-	color: #77a466;
-}
-.main-title p {
-	padding: 0;
-	font-size: 16px;
-	line-height: 25px;
-}
+			/*The widths are in a percentage!*/
+			header {
+				height: 110px;
+				font-size: .875em;
+				margin: 0 auto;
+				text-align: center;
+			}
 
-.section-one,
-.section-two,
-.section-three {
-	width: 33%;
-	height: auto;
-	float: left;
-	border-top: 1px solid #eee;
-}
+			header h1 {
+				font-size: 1.875em;
+				margin: 0;
+				padding: 2% 0 5% 0;
+				border-bottom: 3px solid #77a466;
+			}
 
-.section-one h4 {
-	padding: 10px 0;
-}
+			header h1 span {
+				color: #77a466;
+			}
 
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
-}
+			header nav {
+				clear: both;
+				float: left;
+				padding: 20px;
+			}
 
-.section-two h4,
-.section-three h4 {
-	padding: 10px 30px;
-}
+			header nav ul {
+				margin: 0;
+				padding: 0;
+			}
 
-.menu {
-	list-style: none;
-	padding: 0;
-}
-.menu li {
-	padding: 10px 0;
-	color:#77a466;
-}
+			header nav ul li {
+				text-transform: uppercase;
+				font-weight: 700;
+				font-size: 1em;
+				padding: 3px 10px;
+				display: inline-block;
+			}
 
-.reviews {
-	color: #333;
-	font-size: 16px;
-	line-height: 21px;
-}
+			header nav ul li a{
+				clear: both;
+				text-decoration: none;
+				color:#77a466;
+			}
 
-.address {
-	font-size: 16px;
-	line-height: 24px;
-}
+			/*The widths are in a percentage!*/
+			.top-section,
+			.bottom-section {
+				margin: 0 auto;
+				font-size: 1em;
+				clear: both;
+				max-width: 80%;
+			}
 
-/*The widths are in a percentage!*/
-footer {
-	height: 50px;
-	border-top: 3px solid #eee;
-	margin: 0 auto;
-	clear: both;
-	text-align: center;
+			.main-image {
+				height: auto;
+				float: left;
+			}
+			.main-image img {
+				width: 100%;
+				border-bottom: 3px solid #77a466;
+			}
+
+			.main-title {
+				height: auto;
+				float: left;
+			}
+			.main-title h3 {
+				text-align: center;
+				padding: 2px 25px;
+				color: #77a466;
+			}
+			.main-title p {
+				padding: 0;
+				font-size: 1em;
+				line-height: 25px;
+				text-align: justify;
+			}
+
+			.section-one,
+			.section-two,
+			.section-three {
+				width: 100%;
+				height: auto;
+				float: left;
+				clear: both;
+				text-align: center;
+			}
+
+			.section-two {
+				text-align: left;
+			}
+
+			.section-two h4,
+			.section-three h4,
+			.section-one h4 {
+				padding: 0px 30px;
+				font-size: 1.1em;
+				text-align: center;
+			}
+
+			.menu {
+				list-style: none;
+				padding: 0;
+			}
+			.menu li {
+				padding: 10px 0;
+				color:#77a466;
+			}
+
+			.reviews {
+				color: #333;
+				font-size: 1em;
+				line-height: 21px;
+			}
+
+			.address {
+				font-size: 1em;
+				line-height: 24px;
+			}
+
+			/*The widths are in a percentage!*/
+			#footer-module {
+				font-size: 1em;
+			}
+
+			footer {
+				height: 50px;
+				border-top: 3px solid #eee;
+				margin: 0 auto;
+				clear: both;
+				text-align: center;
+				font-size: 1.1em;
+			}
+			footer span {
+				font-family: 'Wisdom Script', cursive;
+				text-transform: lowercase;
+				color: #77a466;
+				font-size: 1.5em;
+			}
 }
-footer span {
-	font-family: 'Wisdom Script', cursive;
-	text-transform: lowercase;
-	color: #77a466;
-	font-size: 14px;
+/*---------------------------------------------------*/
+@media all and (min-width:768px) {
+	    /* Tablet styles */
+			html {
+				font-size: 16px;
+			}
+
+			body {
+				font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+				font-size: 1em;
+			}
+
+			.container {
+				max-width: 940px;
+				margin: 0 3%;
+			}
+
+			h1,
+			h2,
+			h3,
+			h4 {
+				color: red; /*change to black! */
+				text-transform: uppercase;
+				font-weight: 700;
+			}
+
+			h2 { /* not used? should be 24px */
+			  font-size: 1.5em;
+			}
+
+			.top-section h3 {
+				font-size: 1.125em;
+			}
+
+			.bottom-section h4 {
+				font-size: .75em;
+			}
+
+			footer h4 {
+				font-size: .75em;
+			}
+
+			p { /* mobile specific */
+				font-size: .875em;
+				line-height: 21px;
+			  padding: 0 30px;
+			}
+
+			/*The widths are in a percentage!*/
+			header {
+				height: 110px;
+				font-size: .875em;
+				margin: 0 auto;
+				text-align: center;
+			}
+
+			header h1 {
+				font-size: 1.875em;
+				margin: 0;
+				padding: 2% 0 5% 0;
+			}
+
+			header h1 span {
+				color: #77a466;
+			}
+
+			header nav {
+				clear: both;
+				float: left;
+				padding: 20px;
+			}
+
+			header nav ul {
+				margin: 0;
+				padding: 0;
+			}
+
+			header nav ul li {
+				text-transform: uppercase;
+				font-weight: 700;
+				font-size: 1em;
+				padding: 3px 10px;
+				display: inline-block;
+			}
+
+			header nav ul li a{
+				clear: both;
+				text-decoration: none;
+				color:#77a466;
+			}
+
+			/*The widths are in a percentage!*/
+			.top-section,
+			.bottom-section {
+				margin: 0 auto;
+				font-size: 1em;
+				clear: both;
+				max-width: 80%;
+			}
+
+			.main-image {
+				height: auto;
+				float: left;
+			}
+			.main-image img {
+				width: 100%;
+				border-bottom: 3px solid #77a466;
+			}
+
+			.main-title {
+				height: auto;
+				float: left;
+			}
+			.main-title h3 {
+				text-align: center;
+				padding: 2px 25px;
+				color: #77a466;
+			}
+			.main-title p {
+				padding: 0;
+				font-size: 1em;
+				line-height: 25px;
+				text-align: justify;
+			}
+
+			.section-one,
+			.section-two,
+			.section-three {
+				width: 33%;
+				height: auto;
+				float: left;
+				border-top: 1px solid #eee;
+			}
+
+			.section-two {
+				border-left: 1px solid #eee;
+				border-right: 1px solid #eee;
+			}
+
+			.section-two h4,
+			.section-three h4 {
+				padding: 10px 30px;
+			}
+
+			.menu {
+				list-style: none;
+				padding: 0;
+			}
+			.menu li {
+				padding: 10px 0;
+				color:#77a466;
+			}
+
+			.reviews {
+				color: #333;
+				font-size: 1em;
+				line-height: 21px;
+			}
+
+			.address {
+				font-size: 1em;
+				line-height: 24px;
+			}
+
+			/*The widths are in a percentage!*/
+			#footer-module {
+				font-size: 1em;
+			}
+
+			footer {
+				height: 50px;
+				border-top: 3px solid #eee;
+				margin: 0 auto;
+				clear: both;
+				text-align: center;
+				font-size: 1.1em;
+			}
+			footer span {
+				font-family: 'Wisdom Script', cursive;
+				text-transform: lowercase;
+				color: #77a466;
+				font-size: 1.5em;
+			}
+	}
+
+@media all and (min-width:940px) {
+    /* Desktop styles here */
+		@font-face{
+		font-family: 'Wisdom Script';
+		src: url('../fonts/wisdom-script.otf') format('opentype');
+		}
+
+		body {
+			font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+		}
+
+		.container{
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4 {
+			color: black;
+			text-transform: uppercase;
+			font-weight: 700;
+		}
+		h1 {
+			font-size: 30px;
+		}
+		h2 {
+		    font-size: 24px;
+		}
+		h3 {
+			font-size: 18px;
+		}
+		h4 {
+			font-size: 12px;
+		}
+
+		p {
+			font-size: 14px;
+			line-height: 21px;
+		  padding: 0 30px;
+		}
+
+		/*The widths are in a percentage!*/
+		header {
+			height: 110px;
+			margin: 0 auto;
+		}
+
+		header h1 {
+			float: left;
+			margin: 0;
+			padding: 38px 0;
+		}
+		header h1 span {
+			color: #77a466;
+		}
+
+		header nav {
+			float: right;
+			padding: 46px 0;
+		}
+		header nav ul {
+			margin: 0;
+			padding: 0;
+		}
+		header nav ul li {
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 14px;
+			padding: 0 10px;
+			display: inline;
+		}
+		header nav ul li a{
+			text-decoration: none;
+			color:#77a466;
+		}
+
+		/*The widths are in a percentage!*/
+		.top-section,
+		.bottom-section {
+			margin: 0 auto;
+			clear: both;
+		}
+
+		.main-image {
+			height: auto;
+			float: left;
+		}
+
+		.main-image img {
+			width: 100%;
+			border-bottom: 3px solid #77a466;
+			border-top: 3px solid #77a466;
+		}
+
+		.main-title {
+			height: auto;
+			float: left;
+		}
+
+		.main-title h3 {
+			text-align: left;
+			padding: 5px 0;
+			color: #77a466;
+		}
+		.main-title p {
+			padding: 0;
+			font-size: 16px;
+			line-height: 25px;
+		}
+
+		.section-one,
+		.section-two,
+		.section-three {
+			width: 33%;
+			height: auto;
+			float: left;
+			border-top: 1px solid #eee;
+		}
+
+		.section-one h4 {
+			padding: 10px 0;
+		}
+
+		.section-two {
+			border-left: 1px solid #eee;
+			border-right: 1px solid #eee;
+		}
+
+		.section-two h4,
+		.section-three h4 {
+			padding: 10px 30px;
+		}
+
+		.menu {
+			list-style: none;
+			padding: 0;
+		}
+		.menu li {
+			padding: 10px 0;
+			color:#77a466;
+		}
+
+		.reviews {
+			color: #333;
+			font-size: 16px;
+			line-height: 21px;
+		}
+
+		.address {
+			font-size: 16px;
+			line-height: 24px;
+		}
+
+		/*The widths are in a percentage!*/
+		footer {
+			height: 50px;
+			border-top: 3px solid #eee;
+			margin: 0 auto;
+			clear: both;
+			text-align: center;
+		}
+		footer span {
+			font-family: 'Wisdom Script', cursive;
+			text-transform: lowercase;
+			color: #77a466;
+			font-size: 14px;
+		}
 }
