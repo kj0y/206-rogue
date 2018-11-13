@@ -3,20 +3,19 @@
 		src: url('../fonts/wisdom-script.otf') format('opentype');
 	}
 
+	html {
+		font-size: 16px;
+	}
+
+	body {
+		font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	}
+
 @media all and (max-width:767px) {
 		    /* Mobile styles */
-			html {
-				font-size: 16px;
-			}
-
-			body {
-				font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-				font-size: 1em;
-			}
-
 			.container {
 				max-width: 768px;
-				margin: 0 3%;
+				margin: 0 0%;
 			}
 
 			h1,
@@ -29,7 +28,7 @@
 			}
 
 			h2 { /* not used? should be 24px */
-			    font-size: 1.5em;
+			  font-size: 1.5em;
 			}
 
 			.top-section h3 {
@@ -61,8 +60,7 @@
 			header h1 {
 				font-size: 1.875em;
 				margin: 0;
-				padding: 2% 0 5% 0;
-				border-bottom: 3px solid #77a466;
+				padding: 2% 0 1% 0;
 			}
 
 			header h1 span {
@@ -109,6 +107,7 @@
 			}
 			.main-image img {
 				width: 100%;
+				border-top: 3px solid #77a466;
 				border-bottom: 3px solid #77a466;
 			}
 
@@ -191,27 +190,18 @@
 			}
 }
 /*---------------------------------------------------*/
-@media all and (min-width:768px) {
+@media all and (min-width:768px) and (max-width: 939px) {
 	    /* Tablet styles */
-			html {
-				font-size: 16px;
-			}
-
-			body {
-				font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-				font-size: 1em;
-			}
-
 			.container {
-				max-width: 940px;
-				margin: 0 3%;
+				max-width: 939px;
+				margin: 0 1%;
 			}
 
 			h1,
 			h2,
 			h3,
 			h4 {
-				color: red; /*change to black! */
+				color: black;
 				text-transform: uppercase;
 				font-weight: 700;
 			}
@@ -249,7 +239,7 @@
 			header h1 {
 				font-size: 1.875em;
 				margin: 0;
-				padding: 2% 0 5% 0;
+				padding: 2% 0 1% 0;
 			}
 
 			header h1 span {
@@ -257,8 +247,6 @@
 			}
 
 			header nav {
-				clear: both;
-				float: left;
 				padding: 20px;
 			}
 
@@ -296,6 +284,7 @@
 			}
 			.main-image img {
 				width: 100%;
+				border-top: 3px solid #77a466;
 				border-bottom: 3px solid #77a466;
 			}
 
@@ -377,18 +366,8 @@
 
 @media all and (min-width:940px) {
     /* Desktop styles here */
-		@font-face{
-		font-family: 'Wisdom Script';
-		src: url('../fonts/wisdom-script.otf') format('opentype');
-		}
-
-		body {
-			font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-		}
-
-		.container{
-			max-width: 1200px;
-			margin: 0 auto;
+		.container {
+			margin: auto 1%;
 		}
 
 		h1,
@@ -403,7 +382,7 @@
 			font-size: 30px;
 		}
 		h2 {
-		    font-size: 24px;
+		  font-size: 24px;
 		}
 		h3 {
 			font-size: 18px;
@@ -420,35 +399,39 @@
 
 		/*The widths are in a percentage!*/
 		header {
-			height: 110px;
-			margin: 0 auto;
+			margin: 1% 0%;
 		}
 
 		header h1 {
 			float: left;
 			margin: 0;
-			padding: 38px 0;
+			margin: 1% 0;
 		}
+
 		header h1 span {
 			color: #77a466;
 		}
 
-		header nav {
+		nav {
+			padding: 0px 0;
+			height: 50px;
 			float: right;
-			padding: 46px 0;
 		}
+
 		header nav ul {
-			margin: 0;
+			margin-top: 30px;
 			padding: 0;
 		}
+
 		header nav ul li {
+			display: inline-block;
+			float: right;
 			text-transform: uppercase;
 			font-weight: 700;
 			font-size: 14px;
 			padding: 0 10px;
-			display: inline;
 		}
-		header nav ul li a{
+		header nav ul li a {
 			text-decoration: none;
 			color:#77a466;
 		}
