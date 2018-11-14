@@ -11,45 +11,110 @@
 		font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	}
 
-@media all and (max-width:767px) {
-		    /* Mobile styles */
+	h1,
+	h2,
+	h3,
+	h4 {
+		color: black;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+
+	h2 { /* not used? should be 24px */
+		font-size: 1.5em;
+	}
+
+	.top-section h3 {
+		font-size: 1.125em;
+	}
+
+	.bottom-section h4 {
+		font-size: .75em;
+	}
+
+	footer h4 {
+		font-size: .75em;
+	}
+
+	p { /* mobile specific */
+		font-size: .875em;
+		line-height: 21px;
+		padding: 0 30px;
+	}
+
+	header h1 span {
+		color: #77a466;
+	}
+
+	.main-image {
+		height: auto;
+		width: inherit;
+	}
+
+	.main-image img {
+		width: 100%;
+		border-top: 3px solid #77a466;
+		border-bottom: 3px solid #77a466;
+	}
+
+	.main-title {
+		height: auto;
+		float: left;
+	}
+	.main-title h3 {
+		text-align: center;
+		padding: 2px 25px;
+		color: #77a466;
+	}
+	.main-title p {
+		padding: 0;
+		font-size: 1em;
+		line-height: 25px;
+		text-align: justify;
+	}
+
+	.menu {
+		list-style: none;
+		padding: 0;
+	}
+	.menu li {
+		padding: 10px 0;
+		color:#77a466;
+	}
+
+	.reviews {
+		color: #333;
+		font-size: 1em;
+		line-height: 21px;
+	}
+
+	.address {
+		font-size: 1em;
+		line-height: 24px;
+	}
+
+	footer {
+		height: 50px;
+		border-top: 3px solid #eee;
+		margin: 0 auto;
+		clear: both;
+		text-align: center;
+		font-size: 1.1em;
+	}
+
+	footer span {
+		font-family: 'Wisdom Script', cursive;
+		text-transform: lowercase;
+		color: #77a466;
+		font-size: 1.5em;
+	}
+
+@media all and (max-width:767px) {  /* Mobile styles */
 			.container {
 				max-width: 768px;
 				margin: 0 0%;
 			}
 
-			h1,
-			h2,
-			h3,
-			h4 {
-				color: black;
-				text-transform: uppercase;
-				font-weight: 700;
-			}
-
-			h2 { /* not used? should be 24px */
-			  font-size: 1.5em;
-			}
-
-			.top-section h3 {
-				font-size: 1.125em;
-			}
-
-			.bottom-section h4 {
-				font-size: .75em;
-			}
-
-			footer h4 {
-				font-size: .75em;
-			}
-
-			p { /* mobile specific */
-				font-size: .875em;
-				line-height: 21px;
-			  padding: 0 30px;
-			}
-
-			/*The widths are in a percentage!*/
 			header {
 				height: 110px;
 				font-size: .875em;
@@ -61,10 +126,6 @@
 				font-size: 1.875em;
 				margin: 0;
 				padding: 2% 0 1% 0;
-			}
-
-			header h1 span {
-				color: #77a466;
 			}
 
 			header nav {
@@ -86,45 +147,18 @@
 				display: inline-block;
 			}
 
-			header nav ul li a{
+			header nav ul li a {
 				clear: both;
 				text-decoration: none;
 				color:#77a466;
 			}
 
-			/*The widths are in a percentage!*/
 			.top-section,
 			.bottom-section {
 				margin: 0 auto;
 				font-size: 1em;
 				clear: both;
 				max-width: 80%;
-			}
-
-			.main-image {
-				height: auto;
-				float: left;
-			}
-			.main-image img {
-				width: 100%;
-				border-top: 3px solid #77a466;
-				border-bottom: 3px solid #77a466;
-			}
-
-			.main-title {
-				height: auto;
-				float: left;
-			}
-			.main-title h3 {
-				text-align: center;
-				padding: 2px 25px;
-				color: #77a466;
-			}
-			.main-title p {
-				padding: 0;
-				font-size: 1em;
-				line-height: 25px;
-				text-align: justify;
 			}
 
 			.section-one,
@@ -149,44 +183,8 @@
 				text-align: center;
 			}
 
-			.menu {
-				list-style: none;
-				padding: 0;
-			}
-			.menu li {
-				padding: 10px 0;
-				color:#77a466;
-			}
-
-			.reviews {
-				color: #333;
-				font-size: 1em;
-				line-height: 21px;
-			}
-
-			.address {
-				font-size: 1em;
-				line-height: 24px;
-			}
-
-			/*The widths are in a percentage!*/
 			#footer-module {
 				font-size: 1em;
-			}
-
-			footer {
-				height: 50px;
-				border-top: 3px solid #eee;
-				margin: 0 auto;
-				clear: both;
-				text-align: center;
-				font-size: 1.1em;
-			}
-			footer span {
-				font-family: 'Wisdom Script', cursive;
-				text-transform: lowercase;
-				color: #77a466;
-				font-size: 1.5em;
 			}
 }
 /*---------------------------------------------------*/
@@ -195,37 +193,6 @@
 			.container {
 				max-width: 939px;
 				margin: 0 1%;
-			}
-
-			h1,
-			h2,
-			h3,
-			h4 {
-				color: black;
-				text-transform: uppercase;
-				font-weight: 700;
-			}
-
-			h2 { /* not used? should be 24px */
-			  font-size: 1.5em;
-			}
-
-			.top-section h3 {
-				font-size: 1.125em;
-			}
-
-			.bottom-section h4 {
-				font-size: .75em;
-			}
-
-			footer h4 {
-				font-size: .75em;
-			}
-
-			p { /* mobile specific */
-				font-size: .875em;
-				line-height: 21px;
-			  padding: 0 30px;
 			}
 
 			/*The widths are in a percentage!*/
@@ -240,10 +207,6 @@
 				font-size: 1.875em;
 				margin: 0;
 				padding: 2% 0 1% 0;
-			}
-
-			header h1 span {
-				color: #77a466;
 			}
 
 			header nav {
@@ -278,32 +241,6 @@
 				max-width: 80%;
 			}
 
-			.main-image {
-				height: auto;
-				float: left;
-			}
-			.main-image img {
-				width: 100%;
-				border-top: 3px solid #77a466;
-				border-bottom: 3px solid #77a466;
-			}
-
-			.main-title {
-				height: auto;
-				float: left;
-			}
-			.main-title h3 {
-				text-align: center;
-				padding: 2px 25px;
-				color: #77a466;
-			}
-			.main-title p {
-				padding: 0;
-				font-size: 1em;
-				line-height: 25px;
-				text-align: justify;
-			}
-
 			.section-one,
 			.section-two,
 			.section-three {
@@ -323,81 +260,17 @@
 				padding: 10px 30px;
 			}
 
-			.menu {
-				list-style: none;
-				padding: 0;
-			}
-			.menu li {
-				padding: 10px 0;
-				color:#77a466;
-			}
-
-			.reviews {
-				color: #333;
-				font-size: 1em;
-				line-height: 21px;
-			}
-
-			.address {
-				font-size: 1em;
-				line-height: 24px;
-			}
-
 			/*The widths are in a percentage!*/
 			#footer-module {
 				font-size: 1em;
 			}
-
-			footer {
-				height: 50px;
-				border-top: 3px solid #eee;
-				margin: 0 auto;
-				clear: both;
-				text-align: center;
-				font-size: 1.1em;
-			}
-			footer span {
-				font-family: 'Wisdom Script', cursive;
-				text-transform: lowercase;
-				color: #77a466;
-				font-size: 1.5em;
-			}
 	}
 
-@media all and (min-width:940px) {
-    /* Desktop styles here */
+@media all and (min-width:940px) { /* Desktop styles */
 		.container {
 			margin: auto 1%;
 		}
 
-		h1,
-		h2,
-		h3,
-		h4 {
-			color: black;
-			text-transform: uppercase;
-			font-weight: 700;
-		}
-		h1 {
-			font-size: 30px;
-		}
-		h2 {
-		  font-size: 24px;
-		}
-		h3 {
-			font-size: 18px;
-		}
-		h4 {
-			font-size: 12px;
-		}
-
-		p {
-			font-size: 14px;
-			line-height: 21px;
-		  padding: 0 30px;
-		}
-
-		/*The widths are in a percentage!*/
 		header {
 			margin: 1% 0%;
 		}
@@ -406,10 +279,6 @@
 			float: left;
 			margin: 0;
 			margin: 1% 0;
-		}
-
-		header h1 span {
-			color: #77a466;
 		}
 
 		nav {
@@ -431,43 +300,16 @@
 			font-size: 14px;
 			padding: 0 10px;
 		}
+
 		header nav ul li a {
 			text-decoration: none;
 			color:#77a466;
 		}
 
-		/*The widths are in a percentage!*/
 		.top-section,
 		.bottom-section {
 			margin: 0 auto;
 			clear: both;
-		}
-
-		.main-image {
-			height: auto;
-			float: left;
-		}
-
-		.main-image img {
-			width: 100%;
-			border-bottom: 3px solid #77a466;
-			border-top: 3px solid #77a466;
-		}
-
-		.main-title {
-			height: auto;
-			float: left;
-		}
-
-		.main-title h3 {
-			text-align: left;
-			padding: 5px 0;
-			color: #77a466;
-		}
-		.main-title p {
-			padding: 0;
-			font-size: 16px;
-			line-height: 25px;
 		}
 
 		.section-one,
@@ -491,40 +333,5 @@
 		.section-two h4,
 		.section-three h4 {
 			padding: 10px 30px;
-		}
-
-		.menu {
-			list-style: none;
-			padding: 0;
-		}
-		.menu li {
-			padding: 10px 0;
-			color:#77a466;
-		}
-
-		.reviews {
-			color: #333;
-			font-size: 16px;
-			line-height: 21px;
-		}
-
-		.address {
-			font-size: 16px;
-			line-height: 24px;
-		}
-
-		/*The widths are in a percentage!*/
-		footer {
-			height: 50px;
-			border-top: 3px solid #eee;
-			margin: 0 auto;
-			clear: both;
-			text-align: center;
-		}
-		footer span {
-			font-family: 'Wisdom Script', cursive;
-			text-transform: lowercase;
-			color: #77a466;
-			font-size: 14px;
 		}
 }
